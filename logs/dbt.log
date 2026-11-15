@@ -1,0 +1,771 @@
+[0m18:11:10.901192 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 18:11:11.092207 | d68f6584-bb76-4b5c-bc00-52c228a09436 ==============================
+[0m18:11:11.092207 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:11:11.093565 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': 'logs', 'printer_width': '80', 'no_print': 'None', 'use_colors': 'True', 'cache_selected_only': 'False', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'log_cache_events': 'False', 'version_check': 'True', 'use_experimental_parser': 'False', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'indirect_selection': 'eager', 'write_json': 'True', 'quiet': 'False', 'invocation_command': 'dbt debug --profiles-dir C:\\Users\\Le Nguyen My Duyen\\.dbt', 'warn_error': 'None', 'introspect': 'True'}
+[0m18:11:11.223772 [info ] [MainThread]: dbt version: 1.11.11
+[0m18:11:11.224633 [info ] [MainThread]: python version: 3.13.9
+[0m18:11:11.225134 [info ] [MainThread]: python path: C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\python.exe
+[0m18:11:11.225541 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m18:11:11.228246 [info ] [MainThread]: target not specified in profile 'name', using 'default'
+[0m18:11:11.229665 [info ] [MainThread]: target not specified in profile 'outputs', using 'default'
+[0m18:11:11.231367 [info ] [MainThread]: target not specified in profile 'target', using 'default'
+[0m18:11:11.232051 [info ] [MainThread]: Using profiles dir at C:\Users\Le Nguyen My Duyen\.dbt
+[0m18:11:11.232559 [info ] [MainThread]: Using profiles.yml file at C:\Users\Le Nguyen My Duyen\.dbt\profiles.yml
+[0m18:11:11.233092 [info ] [MainThread]: Using dbt_project.yml file at D:\Workspace\BI\dss_hotel_analytics\dbt_project.yml
+[0m18:11:11.233565 [info ] [MainThread]: Configuration:
+[0m18:11:11.233967 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m18:11:11.234370 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m18:11:11.234747 [info ] [MainThread]: Required dependencies:
+[0m18:11:11.235145 [debug] [MainThread]: Executing "git --help"
+[0m18:11:11.312257 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m18:11:11.313203 [debug] [MainThread]: STDERR: "b''"
+[0m18:11:11.314007 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m18:11:11.314607 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m18:11:11.315198 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m18:11:11.315657 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  outputs not specified in profile 'name'
+
+Runtime Error
+  outputs not specified in profile 'outputs'
+
+Runtime Error
+  outputs not specified in profile 'target'
+
+
+[0m18:11:11.316238 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <D:\Workspace\BI\dss_hotel_analytics\dbt_project.yml> not found
+
+[0m18:11:11.319375 [debug] [MainThread]: Command `dbt debug` failed at 18:11:11.319193 after 0.57 seconds
+[0m18:11:11.319930 [debug] [MainThread]: Flushing usage events
+[0m18:16:38.876972 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 18:16:39.095791 | d7d9e32b-3a60-491e-b383-ba3189e76244 ==============================
+[0m18:16:39.095791 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:16:39.096750 [debug] [MainThread]: running dbt with arguments {'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'write_json': 'True', 'version_check': 'True', 'target_path': 'None', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'invocation_command': 'dbt debug --profiles-dir C:\\Users\\Le Nguyen My Duyen\\.dbt', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs', 'partial_parse': 'True', 'use_experimental_parser': 'False', 'debug': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'quiet': 'False', 'fail_fast': 'False', 'log_format': 'default', 'use_colors': 'True', 'printer_width': '80', 'static_parser': 'True', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'empty': 'None'}
+[0m18:16:39.158102 [info ] [MainThread]: dbt version: 1.11.11
+[0m18:16:39.158921 [info ] [MainThread]: python version: 3.13.9
+[0m18:16:39.159803 [info ] [MainThread]: python path: C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\python.exe
+[0m18:16:39.160385 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m18:16:39.173139 [error] [MainThread]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'SNOWFLAKE_ACCOUNT'
+[0m18:16:39.176770 [debug] [MainThread]: Command `dbt debug` failed at 18:16:39.176500 after 0.47 seconds
+[0m18:16:39.177386 [debug] [MainThread]: Flushing usage events
+[0m20:29:55.077465 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E9B9981A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E9CA53C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E9CA53890>]}
+
+
+============================== 20:29:55.085800 | abf1b193-02f6-4e8e-94a6-18b697731f05 ==============================
+[0m20:29:55.085800 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:29:55.087345 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'invocation_command': 'dbt init hotel_analytics', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m20:29:55.129874 [info ] [MainThread]: Setting up your profile.
+[0m20:30:31.789773 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:30:31.790628 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:30:31.791036 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:32:53.436231 [error] [MainThread]: Encountered an error:
+
+[0m20:32:53.496209 [error] [MainThread]: Traceback (most recent call last):
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+                      ~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\cli\main.py", line 488, in init
+    results = task.run()
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 320, in run
+    self.setup_profile(profile_name)
+    ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 262, in setup_profile
+    self.create_profile_from_target(adapter, profile_name=profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 179, in create_profile_from_target
+    self.create_profile_from_profile_template(profile_template, profile_name)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 163, in create_profile_from_profile_template
+    target = self.generate_target_from_input(prompts, initial_target)
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\dbt\task\init.py", line 129, in generate_target_from_input
+    target[key] = click.prompt(
+                  ~~~~~~~~~~~~^
+        text, default=default, hide_input=hide_input, type=type
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\click\termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+  File "C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\Lib\site-packages\click\termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m20:32:53.498385 [debug] [MainThread]: Command `dbt init` failed at 20:32:53.498221 after 178.73 seconds
+[0m20:32:53.498919 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBF385220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018E9DB34710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018EBF3A0D10>]}
+[0m20:32:53.499647 [debug] [MainThread]: Flushing usage events
+[0m20:32:55.368346 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:33:16.889387 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001044A5A81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001044B65FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001044B65F9D0>]}
+
+
+============================== 20:33:16.895414 | cff1258d-e8e6-4d78-80ef-bc6d9276793b ==============================
+[0m20:33:16.895414 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:33:16.896302 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt init hotel_analytics', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m20:33:16.969709 [info ] [MainThread]: Setting up your profile.
+[0m20:33:28.028590 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:33:28.029256 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:33:28.029648 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:36:14.428947 [info ] [MainThread]: Profile hotel_dwh written to C:\Users\Le Nguyen My Duyen\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m20:36:14.430543 [debug] [MainThread]: Command `dbt init` succeeded at 20:36:14.430377 after 177.79 seconds
+[0m20:36:14.430995 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001046DD57360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001044C744830>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001046DFC0AF0>]}
+[0m20:36:14.431457 [debug] [MainThread]: Flushing usage events
+[0m20:36:15.976201 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:36:54.873097 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231F9A981A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231FAB4FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231FAB4F9D0>]}
+
+
+============================== 20:36:54.879092 | 9cca4867-9782-4d2d-bc9f-72b9026f5b16 ==============================
+[0m20:36:54.879092 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:36:54.880028 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug --profile hotel_dwh', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m20:36:54.915127 [info ] [MainThread]: dbt version: 1.11.11
+[0m20:36:54.916687 [info ] [MainThread]: python version: 3.13.9
+[0m20:36:54.917255 [info ] [MainThread]: python path: C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\python.exe
+[0m20:36:54.917781 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m20:36:56.061456 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:36:56.062007 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:36:56.062362 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:36:56.245033 [info ] [MainThread]: Using profiles dir at C:\Users\Le Nguyen My Duyen\.dbt
+[0m20:36:56.246720 [info ] [MainThread]: Using profiles.yml file at C:\Users\Le Nguyen My Duyen\.dbt\profiles.yml
+[0m20:36:56.247547 [info ] [MainThread]: Using dbt_project.yml file at D:\Workspace\BI\dss_hotel_analytics\dbt_project.yml
+[0m20:36:56.250553 [info ] [MainThread]: adapter type: snowflake
+[0m20:36:56.251198 [info ] [MainThread]: adapter version: 1.12.5
+[0m20:36:56.423044 [info ] [MainThread]: Configuration:
+[0m20:36:56.423801 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:36:56.424370 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:36:56.424908 [info ] [MainThread]: Required dependencies:
+[0m20:36:56.425428 [debug] [MainThread]: Executing "git --help"
+[0m20:36:56.484398 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:36:56.484963 [debug] [MainThread]: STDERR: "b''"
+[0m20:36:56.485473 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:36:56.486025 [info ] [MainThread]: Connection:
+[0m20:36:56.486520 [info ] [MainThread]:   account: fc74300.ap-southeast-7.aws
+[0m20:36:56.486937 [info ] [MainThread]:   user: DUYENLNM23416@ST.UEL.EDU.VN
+[0m20:36:56.487317 [info ] [MainThread]:   database: HOTEL_DWH
+[0m20:36:56.487688 [info ] [MainThread]:   warehouse: HOTEL_ANALYTICS_WH
+[0m20:36:56.488151 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m20:36:56.488634 [info ] [MainThread]:   schema: SILVER
+[0m20:36:56.489064 [info ] [MainThread]:   authenticator: None
+[0m20:36:56.489447 [info ] [MainThread]:   oauth_client_id: None
+[0m20:36:56.489812 [info ] [MainThread]:   query_tag: None
+[0m20:36:56.490248 [info ] [MainThread]:   client_session_keep_alive: False
+[0m20:36:56.490607 [info ] [MainThread]:   host: None
+[0m20:36:56.491072 [info ] [MainThread]:   port: None
+[0m20:36:56.491564 [info ] [MainThread]:   proxy_host: None
+[0m20:36:56.492046 [info ] [MainThread]:   proxy_port: None
+[0m20:36:56.492518 [info ] [MainThread]:   protocol: None
+[0m20:36:56.492998 [info ] [MainThread]:   connect_retries: 1
+[0m20:36:56.493453 [info ] [MainThread]:   connect_timeout: None
+[0m20:36:56.493964 [info ] [MainThread]:   retry_on_database_errors: False
+[0m20:36:56.494609 [info ] [MainThread]:   retry_all: False
+[0m20:36:56.495180 [info ] [MainThread]:   insecure_mode: False
+[0m20:36:56.495742 [info ] [MainThread]:   reuse_connections: True
+[0m20:36:56.496538 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m20:36:56.497112 [info ] [MainThread]:   workload_identity_provider: None
+[0m20:36:56.497928 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m20:36:56.498551 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m20:36:56.499558 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m20:36:56.997202 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m20:36:57.001033 [debug] [MainThread]: Using snowflake connection "debug"
+[0m20:36:57.001430 [debug] [MainThread]: On debug: select 1 as id
+[0m20:36:57.001743 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:36:58.018367 [error] [MainThread]: Snowflake login failed message=Incorrect username or password was specified. [8f74438e-8039-4714-935f-da6a7ed9d5e6]
+[0m20:36:58.020027 [debug] [MainThread]: Snowflake adapter: Error running SQL: select 1 as id
+[0m20:36:58.020526 [debug] [MainThread]: Snowflake adapter: Rolling back transaction.
+[0m20:36:58.045498 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m20:36:58.048675 [info ] [MainThread]: [31m1 check failed:[0m
+[0m20:36:58.049821 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  390100 (28000): Failed to login: Login error: Incorrect username or password was specified. [8f74438e-8039-4714-935f-da6a7ed9d5e6], code: 390100
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m20:36:58.051784 [debug] [MainThread]: Command `dbt debug` failed at 20:36:58.051606 after 3.43 seconds
+[0m20:36:58.052237 [debug] [MainThread]: Connection 'debug' was left open.
+[0m20:36:58.052612 [debug] [MainThread]: On debug: No close available on handle
+[0m20:36:58.052986 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002319D915220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002319D757410>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002319D6C9E10>]}
+[0m20:36:58.053506 [debug] [MainThread]: Flushing usage events
+[0m20:36:59.854456 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:40:02.553391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E8D1681A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E8E21FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016E8E21F9D0>]}
+
+
+============================== 20:40:02.559603 | 75f97cbf-367e-450e-bc1c-9b46818d7850 ==============================
+[0m20:40:02.559603 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:40:02.560472 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug --profile hotel_dwh', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m20:40:02.598909 [info ] [MainThread]: dbt version: 1.11.11
+[0m20:40:02.599772 [info ] [MainThread]: python version: 3.13.9
+[0m20:40:02.600379 [info ] [MainThread]: python path: C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\python.exe
+[0m20:40:02.601040 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m20:40:03.751834 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:40:03.752391 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:40:03.752756 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:40:03.933986 [info ] [MainThread]: Using profiles dir at C:\Users\Le Nguyen My Duyen\.dbt
+[0m20:40:03.934760 [info ] [MainThread]: Using profiles.yml file at C:\Users\Le Nguyen My Duyen\.dbt\profiles.yml
+[0m20:40:03.935358 [info ] [MainThread]: Using dbt_project.yml file at D:\Workspace\BI\dss_hotel_analytics\dbt_project.yml
+[0m20:40:03.937271 [info ] [MainThread]: adapter type: snowflake
+[0m20:40:03.937828 [info ] [MainThread]: adapter version: 1.12.5
+[0m20:40:04.117358 [info ] [MainThread]: Configuration:
+[0m20:40:04.118288 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:40:04.118967 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:40:04.119484 [info ] [MainThread]: Required dependencies:
+[0m20:40:04.119996 [debug] [MainThread]: Executing "git --help"
+[0m20:40:04.176593 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:40:04.177306 [debug] [MainThread]: STDERR: "b''"
+[0m20:40:04.177811 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:40:04.178366 [info ] [MainThread]: Connection:
+[0m20:40:04.179021 [info ] [MainThread]:   account: fc74300.ap-southeast-7.aws
+[0m20:40:04.179779 [info ] [MainThread]:   user: DUYENLNM23416@ST.UEL.EDU.VN
+[0m20:40:04.180197 [info ] [MainThread]:   database: HOTEL_DWH
+[0m20:40:04.180567 [info ] [MainThread]:   warehouse: HOTEL_ANALYTICS_WH
+[0m20:40:04.180935 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m20:40:04.181297 [info ] [MainThread]:   schema: SILVER
+[0m20:40:04.181654 [info ] [MainThread]:   authenticator: None
+[0m20:40:04.182005 [info ] [MainThread]:   oauth_client_id: None
+[0m20:40:04.182352 [info ] [MainThread]:   query_tag: None
+[0m20:40:04.182726 [info ] [MainThread]:   client_session_keep_alive: False
+[0m20:40:04.183216 [info ] [MainThread]:   host: None
+[0m20:40:04.183987 [info ] [MainThread]:   port: None
+[0m20:40:04.184638 [info ] [MainThread]:   proxy_host: None
+[0m20:40:04.185236 [info ] [MainThread]:   proxy_port: None
+[0m20:40:04.185744 [info ] [MainThread]:   protocol: None
+[0m20:40:04.186172 [info ] [MainThread]:   connect_retries: 1
+[0m20:40:04.186544 [info ] [MainThread]:   connect_timeout: None
+[0m20:40:04.186900 [info ] [MainThread]:   retry_on_database_errors: False
+[0m20:40:04.187261 [info ] [MainThread]:   retry_all: False
+[0m20:40:04.187612 [info ] [MainThread]:   insecure_mode: False
+[0m20:40:04.188090 [info ] [MainThread]:   reuse_connections: True
+[0m20:40:04.188620 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m20:40:04.189095 [info ] [MainThread]:   workload_identity_provider: None
+[0m20:40:04.189519 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m20:40:04.189895 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m20:40:04.190744 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m20:40:04.593961 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m20:40:04.597746 [debug] [MainThread]: Using snowflake connection "debug"
+[0m20:40:04.598164 [debug] [MainThread]: On debug: select 1 as id
+[0m20:40:04.598477 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:40:06.029476 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.431 seconds
+[0m20:40:06.031163 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:40:06.031890 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:40:06.033442 [debug] [MainThread]: Command `dbt debug` succeeded at 20:40:06.033291 after 3.73 seconds
+[0m20:40:06.033838 [debug] [MainThread]: Connection 'debug' was left open.
+[0m20:40:06.034195 [debug] [MainThread]: On debug: Close
+[0m20:40:06.232378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EB0FC5220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EB0E03D10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000016EB0D79BF0>]}
+[0m20:40:06.233229 [debug] [MainThread]: Flushing usage events
+[0m20:40:07.881727 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:40:53.776298 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001483C7081A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001483D7BFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001483D7BF9D0>]}
+
+
+============================== 20:40:53.782204 | 0c3e31f7-52ed-478e-bab2-8a916a2d5ef3 ==============================
+[0m20:40:53.782204 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:40:53.783100 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m20:40:53.823791 [info ] [MainThread]: dbt version: 1.11.11
+[0m20:40:53.824667 [info ] [MainThread]: python version: 3.13.9
+[0m20:40:53.825210 [info ] [MainThread]: python path: C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\python.exe
+[0m20:40:53.825734 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m20:40:54.955845 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:40:54.956445 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:40:54.956915 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:40:55.138768 [info ] [MainThread]: Using profiles dir at C:\Users\Le Nguyen My Duyen\.dbt
+[0m20:40:55.139671 [info ] [MainThread]: Using profiles.yml file at C:\Users\Le Nguyen My Duyen\.dbt\profiles.yml
+[0m20:40:55.140291 [info ] [MainThread]: Using dbt_project.yml file at D:\Workspace\BI\dss_hotel_analytics\dbt_project.yml
+[0m20:40:55.142207 [info ] [MainThread]: adapter type: snowflake
+[0m20:40:55.142835 [info ] [MainThread]: adapter version: 1.12.5
+[0m20:40:55.318660 [info ] [MainThread]: Configuration:
+[0m20:40:55.319312 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m20:40:55.319885 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m20:40:55.320376 [info ] [MainThread]: Required dependencies:
+[0m20:40:55.320870 [debug] [MainThread]: Executing "git --help"
+[0m20:40:55.379693 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m20:40:55.380328 [debug] [MainThread]: STDERR: "b''"
+[0m20:40:55.380816 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m20:40:55.381394 [info ] [MainThread]: Connection:
+[0m20:40:55.381961 [info ] [MainThread]:   account: fc74300.ap-southeast-7.aws
+[0m20:40:55.382448 [info ] [MainThread]:   user: DUYENLNM23416@ST.UEL.EDU.VN
+[0m20:40:55.382927 [info ] [MainThread]:   database: HOTEL_DWH
+[0m20:40:55.383390 [info ] [MainThread]:   warehouse: HOTEL_ANALYTICS_WH
+[0m20:40:55.383858 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m20:40:55.384321 [info ] [MainThread]:   schema: SILVER
+[0m20:40:55.384861 [info ] [MainThread]:   authenticator: None
+[0m20:40:55.385360 [info ] [MainThread]:   oauth_client_id: None
+[0m20:40:55.385888 [info ] [MainThread]:   query_tag: None
+[0m20:40:55.386568 [info ] [MainThread]:   client_session_keep_alive: False
+[0m20:40:55.387301 [info ] [MainThread]:   host: None
+[0m20:40:55.387953 [info ] [MainThread]:   port: None
+[0m20:40:55.388625 [info ] [MainThread]:   proxy_host: None
+[0m20:40:55.389934 [info ] [MainThread]:   proxy_port: None
+[0m20:40:55.390536 [info ] [MainThread]:   protocol: None
+[0m20:40:55.391122 [info ] [MainThread]:   connect_retries: 1
+[0m20:40:55.392799 [info ] [MainThread]:   connect_timeout: None
+[0m20:40:55.393770 [info ] [MainThread]:   retry_on_database_errors: False
+[0m20:40:55.394531 [info ] [MainThread]:   retry_all: False
+[0m20:40:55.395222 [info ] [MainThread]:   insecure_mode: False
+[0m20:40:55.396436 [info ] [MainThread]:   reuse_connections: True
+[0m20:40:55.397203 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m20:40:55.397850 [info ] [MainThread]:   workload_identity_provider: None
+[0m20:40:55.398502 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m20:40:55.399325 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m20:40:55.400375 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m20:40:55.788389 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m20:40:55.792308 [debug] [MainThread]: Using snowflake connection "debug"
+[0m20:40:55.792729 [debug] [MainThread]: On debug: select 1 as id
+[0m20:40:55.793049 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m20:40:57.127263 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.334 seconds
+[0m20:40:57.129088 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m20:40:57.130858 [info ] [MainThread]: [32mAll checks passed![0m
+[0m20:40:57.132326 [debug] [MainThread]: Command `dbt debug` succeeded at 20:40:57.132180 after 3.52 seconds
+[0m20:40:57.132697 [debug] [MainThread]: Connection 'debug' was left open.
+[0m20:40:57.133138 [debug] [MainThread]: On debug: Close
+[0m20:40:57.536527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014860565220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000148603ABD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000014860319BF0>]}
+[0m20:40:57.537615 [debug] [MainThread]: Flushing usage events
+[0m20:40:59.487545 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m20:49:15.439540 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002279A3181A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002279C42FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002279C42F9D0>]}
+
+
+============================== 20:49:15.445624 | 45315cff-fe95-4f98-a4b4-483e0d93ebeb ==============================
+[0m20:49:15.445624 [info ] [MainThread]: Running with dbt=1.11.11
+[0m20:49:15.446544 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'invocation_command': 'dbt run --profiles-dir C:\\Users\\Le Nguyen My Duyen\\.dbt --project-dir D:\\Workspace\\BI\\dss_hotel_analytics', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m20:49:16.558279 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m20:49:16.558834 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m20:49:16.559189 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m20:49:17.042100 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002279A6A2520>]}
+[0m20:49:17.150423 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002279B17B8A0>]}
+[0m20:49:17.152766 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m20:49:17.628601 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m20:49:17.630007 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m20:49:17.630611 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BDB01F50>]}
+[0m20:49:20.699294 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022799E7E6C0>]}
+[0m20:49:20.792417 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m20:49:20.795397 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m20:49:20.820616 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BE604050>]}
+[0m20:49:20.821477 [info ] [MainThread]: Found 4 models, 1 source, 563 macros
+[0m20:49:20.822167 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BE38CC80>]}
+[0m20:49:20.825010 [info ] [MainThread]: 
+[0m20:49:20.825784 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m20:49:20.826374 [info ] [MainThread]: 
+[0m20:49:20.827294 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m20:49:20.834201 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HOTEL_DWH'
+[0m20:49:20.862428 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH"
+[0m20:49:20.862915 [debug] [ThreadPool]: On list_HOTEL_DWH: show terse schemas in database HOTEL_DWH
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH"} */
+[0m20:49:20.863239 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:49:22.114251 [debug] [ThreadPool]: SQL status: SUCCESS 4 in 1.251 seconds
+[0m20:49:22.155543 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_HOTEL_DWH, now create_HOTEL_DWH_SILVER)
+[0m20:49:22.156513 [debug] [ThreadPool]: Creating schema "database: "HOTEL_DWH"
+schema: "SILVER"
+"
+[0m20:49:22.161888 [debug] [ThreadPool]: Using snowflake connection "create_HOTEL_DWH_SILVER"
+[0m20:49:22.162279 [debug] [ThreadPool]: On create_HOTEL_DWH_SILVER: create schema if not exists HOTEL_DWH.SILVER
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "create_HOTEL_DWH_SILVER"} */
+[0m20:49:22.292783 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 0.130 seconds
+[0m20:49:22.296709 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HOTEL_DWH_SILVER'
+[0m20:49:22.311562 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m20:49:22.311972 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show objects in HOTEL_DWH.SILVER
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */;
+[0m20:49:22.312297 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m20:49:22.733187 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.421 seconds
+[0m20:49:22.743071 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m20:49:22.743467 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show user functions in HOTEL_DWH.SILVER
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */
+[0m20:49:22.841045 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.097 seconds
+[0m20:49:22.845425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BE70AB10>]}
+[0m20:49:22.891297 [debug] [Thread-1 (]: Began running node model.hotel_dwh.stg_raw_hotel_bookings
+[0m20:49:22.892011 [info ] [Thread-1 (]: 1 of 4 START sql view model SILVER.stg_raw_hotel_bookings ...................... [RUN]
+[0m20:49:22.892791 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.hotel_dwh.stg_raw_hotel_bookings'
+[0m20:49:22.893557 [debug] [Thread-1 (]: Began compiling node model.hotel_dwh.stg_raw_hotel_bookings
+[0m20:49:22.902019 [debug] [Thread-1 (]: Writing injected SQL for node "model.hotel_dwh.stg_raw_hotel_bookings"
+[0m20:49:22.904760 [debug] [Thread-1 (]: Began executing node model.hotel_dwh.stg_raw_hotel_bookings
+[0m20:49:22.946626 [debug] [Thread-1 (]: Writing runtime sql for node "model.hotel_dwh.stg_raw_hotel_bookings"
+[0m20:49:22.950154 [debug] [Thread-1 (]: Using snowflake connection "model.hotel_dwh.stg_raw_hotel_bookings"
+[0m20:49:22.950813 [debug] [Thread-1 (]: On model.hotel_dwh.stg_raw_hotel_bookings: create or replace   view HOTEL_DWH.SILVER.stg_raw_hotel_bookings
+  
+  
+  
+  
+  as (
+    -- Staging model for raw hotel bookings
+WITH source AS (
+    SELECT * FROM HOTEL_DWH.bronze.raw_hotel_bookings
+)
+SELECT *
+FROM source
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "node_id": "model.hotel_dwh.stg_raw_hotel_bookings"} */;
+[0m20:49:22.951238 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m20:49:23.446633 [debug] [Thread-1 (]: SQL status: SUCCESS 1 in 0.495 seconds
+[0m20:49:23.475394 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BE79F280>]}
+[0m20:49:23.476195 [info ] [Thread-1 (]: 1 of 4 OK created sql view model SILVER.stg_raw_hotel_bookings ................. [[32mSUCCESS 1[0m in 0.58s]
+[0m20:49:23.477133 [debug] [Thread-1 (]: Finished running node model.hotel_dwh.stg_raw_hotel_bookings
+[0m20:49:23.477956 [debug] [Thread-2 (]: Began running node model.hotel_dwh.clean_hotel_bookings
+[0m20:49:23.478554 [info ] [Thread-2 (]: 2 of 4 START sql view model SILVER.clean_hotel_bookings ........................ [RUN]
+[0m20:49:23.479344 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.hotel_dwh.clean_hotel_bookings'
+[0m20:49:23.479774 [debug] [Thread-2 (]: Began compiling node model.hotel_dwh.clean_hotel_bookings
+[0m20:49:23.482692 [debug] [Thread-2 (]: Writing injected SQL for node "model.hotel_dwh.clean_hotel_bookings"
+[0m20:49:23.484387 [debug] [Thread-2 (]: Began executing node model.hotel_dwh.clean_hotel_bookings
+[0m20:49:23.487645 [debug] [Thread-2 (]: Writing runtime sql for node "model.hotel_dwh.clean_hotel_bookings"
+[0m20:49:23.490370 [debug] [Thread-2 (]: Using snowflake connection "model.hotel_dwh.clean_hotel_bookings"
+[0m20:49:23.491122 [debug] [Thread-2 (]: On model.hotel_dwh.clean_hotel_bookings: create or replace   view HOTEL_DWH.SILVER.clean_hotel_bookings
+  
+  
+  
+  
+  as (
+    -- Silver model: Clean hotel bookings data
+WITH source AS (
+    SELECT * FROM HOTEL_DWH.SILVER.stg_raw_hotel_bookings
+)
+SELECT
+    -- Example cleaning steps (preserve original columns)
+    CAST(arrival_date AS DATE) AS arrival_date,
+    CAST(departure_date AS DATE) AS departure_date,
+    CAST(adults AS INTEGER) AS adults,
+    CAST(children AS INTEGER) AS children,
+    CAST(is_repeated_guest AS BOOLEAN) AS is_repeated_guest,
+    -- Preserve other columns
+    *
+FROM source
+WHERE arrival_date IS NOT NULL
+  AND departure_date IS NOT NULL
+  )
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "node_id": "model.hotel_dwh.clean_hotel_bookings"} */;
+[0m20:49:23.492104 [debug] [Thread-2 (]: Opening a new connection, currently in state init
+[0m20:49:23.968976 [debug] [Thread-2 (]: Snowflake adapter: Snowflake query id: 01c83b1d-000e-288c-0003-07a200016e4a
+[0m20:49:23.969538 [debug] [Thread-2 (]: Snowflake adapter: Snowflake error: 000904 (42000): SQL compilation error: error line 13 at position 9
+invalid identifier 'ARRIVAL_DATE' (request_id=64d9b49e-1b4b-4f31-bf24-395bb6a9c1f4, sfqid=01c83b1d-000e-288c-0003-07a200016e4a)
+[0m20:49:24.211505 [debug] [Thread-2 (]: Database Error in model clean_hotel_bookings (dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql)
+  000904 (42000): SQL compilation error: error line 13 at position 9
+  invalid identifier 'ARRIVAL_DATE' (request_id=64d9b49e-1b4b-4f31-bf24-395bb6a9c1f4, sfqid=01c83b1d-000e-288c-0003-07a200016e4a)
+  compiled code at target\run\hotel_dwh\dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql
+[0m20:49:24.212200 [debug] [Thread-2 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '45315cff-fe95-4f98-a4b4-483e0d93ebeb', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BF8C4550>]}
+[0m20:49:24.212978 [error] [Thread-2 (]: 2 of 4 ERROR creating sql view model SILVER.clean_hotel_bookings ............... [[31mERROR[0m in 0.73s]
+[0m20:49:24.214029 [debug] [Thread-2 (]: Finished running node model.hotel_dwh.clean_hotel_bookings
+[0m20:49:24.214752 [debug] [Thread-7 (]: Marking all children of 'model.hotel_dwh.clean_hotel_bookings' to be skipped because of status 'error'.  Reason: Database Error in model clean_hotel_bookings (dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql)
+  000904 (42000): SQL compilation error: error line 13 at position 9
+  invalid identifier 'ARRIVAL_DATE' (request_id=64d9b49e-1b4b-4f31-bf24-395bb6a9c1f4, sfqid=01c83b1d-000e-288c-0003-07a200016e4a)
+  compiled code at target\run\hotel_dwh\dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql.
+[0m20:49:24.216935 [debug] [Thread-4 (]: Began running node model.hotel_dwh.fct_booking
+[0m20:49:24.217982 [debug] [Thread-3 (]: Began running node model.hotel_dwh.dim_hotel
+[0m20:49:24.217539 [info ] [Thread-4 (]: 4 of 4 SKIP relation SILVER.fct_booking ........................................ [[33mSKIP[0m]
+[0m20:49:24.218773 [info ] [Thread-3 (]: 3 of 4 SKIP relation SILVER.dim_hotel .......................................... [[33mSKIP[0m]
+[0m20:49:24.219494 [debug] [Thread-4 (]: Finished running node model.hotel_dwh.fct_booking
+[0m20:49:24.220036 [debug] [Thread-3 (]: Finished running node model.hotel_dwh.dim_hotel
+[0m20:49:24.221818 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m20:49:24.222244 [debug] [MainThread]: Connection 'create_HOTEL_DWH_SILVER' was left open.
+[0m20:49:24.222581 [debug] [MainThread]: On create_HOTEL_DWH_SILVER: Close
+[0m20:49:24.346978 [debug] [MainThread]: Connection 'list_HOTEL_DWH_SILVER' was left open.
+[0m20:49:24.347570 [debug] [MainThread]: On list_HOTEL_DWH_SILVER: Close
+[0m20:49:24.475361 [debug] [MainThread]: Connection 'model.hotel_dwh.stg_raw_hotel_bookings' was left open.
+[0m20:49:24.476140 [debug] [MainThread]: On model.hotel_dwh.stg_raw_hotel_bookings: Close
+[0m20:49:24.631054 [debug] [MainThread]: Connection 'model.hotel_dwh.clean_hotel_bookings' was left open.
+[0m20:49:24.631720 [debug] [MainThread]: On model.hotel_dwh.clean_hotel_bookings: Close
+[0m20:49:24.755311 [info ] [MainThread]: 
+[0m20:49:24.756161 [info ] [MainThread]: Finished running 4 view models in 0 hours 0 minutes and 3.93 seconds (3.93s).
+[0m20:49:24.757556 [debug] [MainThread]: Command end result
+[0m20:49:24.809643 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m20:49:24.812257 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m20:49:24.820155 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Workspace\BI\dss_hotel_analytics\target\run_results.json
+[0m20:49:24.820719 [info ] [MainThread]: 
+[0m20:49:24.821371 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m20:49:24.822027 [info ] [MainThread]: 
+[0m20:49:24.822642 [error] [MainThread]: [31mFailure in model clean_hotel_bookings (dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql)[0m
+[0m20:49:24.823259 [error] [MainThread]:   Database Error in model clean_hotel_bookings (dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql)
+  000904 (42000): SQL compilation error: error line 13 at position 9
+  invalid identifier 'ARRIVAL_DATE' (request_id=64d9b49e-1b4b-4f31-bf24-395bb6a9c1f4, sfqid=01c83b1d-000e-288c-0003-07a200016e4a)
+  compiled code at target\run\hotel_dwh\dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql
+[0m20:49:24.824614 [info ] [MainThread]: 
+[0m20:49:24.825225 [info ] [MainThread]:   compiled code at target\compiled\hotel_dwh\dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql
+[0m20:49:24.825711 [info ] [MainThread]: 
+[0m20:49:24.826450 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=1 SKIP=2 NO-OP=0 TOTAL=4
+[0m20:49:24.827919 [debug] [MainThread]: Command `dbt run` failed at 20:49:24.827764 after 9.63 seconds
+[0m20:49:24.828378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BF8B9A50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000227BE7EE7D0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002279C498B40>]}
+[0m20:49:24.828819 [debug] [MainThread]: Flushing usage events
+[0m20:49:26.674021 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:10:32.379884 [debug] [MainThread]: Got an exception trying to initialize tracking
+
+
+============================== 21:10:32.611923 | e7e34fe0-6356-4961-83f4-411f11575e60 ==============================
+[0m21:10:32.611923 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:10:32.613574 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'log_cache_events': 'False', 'invocation_command': 'dbt parse --profiles-dir C:\\Users\\Le Nguyen My Duyen\\.dbt --project-dir D:\\Workspace\\BI\\dss_hotel_analytics', 'use_colors': 'True', 'partial_parse': 'True', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'version_check': 'True', 'target_path': 'None', 'fail_fast': 'False', 'quiet': 'False', 'debug': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'indirect_selection': 'eager', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs', 'static_parser': 'True', 'use_experimental_parser': 'False', 'write_json': 'True', 'send_anonymous_usage_stats': 'True', 'log_format': 'default', 'warn_error': 'None'}
+[0m21:10:34.816629 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:10:34.817662 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:10:34.818308 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:10:35.924215 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m21:10:37.589383 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:10:37.924064 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m21:10:37.925603 [debug] [MainThread]: Partial parsing: updated file: hotel_dwh://dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql
+[0m21:10:38.672629 [info ] [MainThread]: Performance info: D:\Workspace\BI\dss_hotel_analytics\target\perf_info.json
+[0m21:10:38.824841 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m21:10:38.832298 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m21:10:38.837295 [debug] [MainThread]: Command `dbt parse` succeeded at 21:10:38.836872 after 6.57 seconds
+[0m21:10:38.838227 [debug] [MainThread]: Flushing usage events
+[0m05:55:07.541012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D788F181A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D789FD3C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D789FD3890>]}
+
+
+============================== 05:55:07.548415 | e39bc104-8c0e-4199-99ca-7123b68030de ==============================
+[0m05:55:07.548415 [info ] [MainThread]: Running with dbt=1.11.11
+[0m05:55:07.549902 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m05:55:07.587524 [info ] [MainThread]: dbt version: 1.11.11
+[0m05:55:07.588259 [info ] [MainThread]: python version: 3.13.9
+[0m05:55:07.589006 [info ] [MainThread]: python path: C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\python.exe
+[0m05:55:07.589599 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m05:55:08.863657 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m05:55:08.864228 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m05:55:08.864580 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m05:55:09.067313 [info ] [MainThread]: Using profiles dir at C:\Users\Le Nguyen My Duyen\.dbt
+[0m05:55:09.068115 [info ] [MainThread]: Using profiles.yml file at C:\Users\Le Nguyen My Duyen\.dbt\profiles.yml
+[0m05:55:09.068584 [info ] [MainThread]: Using dbt_project.yml file at D:\Workspace\BI\dss_hotel_analytics\dbt_project.yml
+[0m05:55:09.070513 [info ] [MainThread]: adapter type: snowflake
+[0m05:55:09.070986 [info ] [MainThread]: adapter version: 1.12.5
+[0m05:55:09.247439 [info ] [MainThread]: Configuration:
+[0m05:55:09.248380 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m05:55:09.249281 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m05:55:09.250022 [info ] [MainThread]: Required dependencies:
+[0m05:55:09.250545 [debug] [MainThread]: Executing "git --help"
+[0m05:55:09.305626 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m05:55:09.306225 [debug] [MainThread]: STDERR: "b''"
+[0m05:55:09.306703 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m05:55:09.307324 [info ] [MainThread]: Connection:
+[0m05:55:09.308205 [info ] [MainThread]:   account: fc74300.ap-southeast-7.aws
+[0m05:55:09.308963 [info ] [MainThread]:   user: DUYENLNM23416@ST.UEL.EDU.VN
+[0m05:55:09.309527 [info ] [MainThread]:   database: HOTEL_DWH
+[0m05:55:09.309970 [info ] [MainThread]:   warehouse: HOTEL_ANALYTICS_WH
+[0m05:55:09.310437 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m05:55:09.310945 [info ] [MainThread]:   schema: SILVER
+[0m05:55:09.311442 [info ] [MainThread]:   authenticator: None
+[0m05:55:09.311938 [info ] [MainThread]:   oauth_client_id: None
+[0m05:55:09.312376 [info ] [MainThread]:   query_tag: None
+[0m05:55:09.312841 [info ] [MainThread]:   client_session_keep_alive: False
+[0m05:55:09.313415 [info ] [MainThread]:   host: None
+[0m05:55:09.314002 [info ] [MainThread]:   port: None
+[0m05:55:09.314447 [info ] [MainThread]:   proxy_host: None
+[0m05:55:09.314929 [info ] [MainThread]:   proxy_port: None
+[0m05:55:09.315390 [info ] [MainThread]:   protocol: None
+[0m05:55:09.315886 [info ] [MainThread]:   connect_retries: 1
+[0m05:55:09.316419 [info ] [MainThread]:   connect_timeout: None
+[0m05:55:09.317036 [info ] [MainThread]:   retry_on_database_errors: False
+[0m05:55:09.317692 [info ] [MainThread]:   retry_all: False
+[0m05:55:09.318303 [info ] [MainThread]:   insecure_mode: False
+[0m05:55:09.318865 [info ] [MainThread]:   reuse_connections: True
+[0m05:55:09.319420 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m05:55:09.319908 [info ] [MainThread]:   workload_identity_provider: None
+[0m05:55:09.320341 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m05:55:09.320736 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m05:55:09.321334 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m05:55:09.744706 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m05:55:09.748581 [debug] [MainThread]: Using snowflake connection "debug"
+[0m05:55:09.749005 [debug] [MainThread]: On debug: select 1 as id
+[0m05:55:09.749331 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m05:55:11.174184 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.425 seconds
+[0m05:55:11.175743 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m05:55:11.176571 [info ] [MainThread]: [32mAll checks passed![0m
+[0m05:55:11.178174 [debug] [MainThread]: Command `dbt debug` succeeded at 05:55:11.178028 after 3.89 seconds
+[0m05:55:11.178552 [debug] [MainThread]: Connection 'debug' was left open.
+[0m05:55:11.178881 [debug] [MainThread]: On debug: Close
+[0m05:55:11.378360 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7ACE55220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7ACC9BD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D7ACC09BF0>]}
+[0m05:55:11.379133 [debug] [MainThread]: Flushing usage events
+[0m05:55:12.987371 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m05:55:25.396257 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D468B881A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D469CCBD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D469CCB9D0>]}
+
+
+============================== 05:55:25.402946 | 6ea97b6f-3ec6-41a9-8eb2-c7bf163a50f5 ==============================
+[0m05:55:25.402946 [info ] [MainThread]: Running with dbt=1.11.11
+[0m05:55:25.403811 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt compile', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m05:55:26.981877 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m05:55:26.982588 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m05:55:26.983049 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m05:55:27.429334 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6ea97b6f-3ec6-41a9-8eb2-c7bf163a50f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D468F12520>]}
+[0m05:55:27.543739 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6ea97b6f-3ec6-41a9-8eb2-c7bf163a50f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D4699EB8A0>]}
+[0m05:55:27.546544 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m05:55:27.981475 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m05:55:28.145497 [debug] [MainThread]: Partial parsing enabled: 3 files deleted, 8 files added, 2 files changed.
+[0m05:55:28.146169 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/models\silver\1_staging\stg_segments.sql
+[0m05:55:28.146564 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/macros\generate_schema_name.sql
+[0m05:55:28.146905 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/models\silver\1_staging\rejected_rows.sql
+[0m05:55:28.147235 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/models\silver\1_staging\stg_hotels.sql
+[0m05:55:28.147551 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/models\silver\1_staging\stg_bookings.sql
+[0m05:55:28.147865 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/models\silver\2_intermediate\int_booking_risk.sql
+[0m05:55:28.148199 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/models\silver\1_staging\stg_agents_companies.sql
+[0m05:55:28.148507 [debug] [MainThread]: Partial parsing: added file: hotel_dwh://dbt/hotel_dwh/models\silver\1_staging\stg_customers.sql
+[0m05:55:28.149007 [debug] [MainThread]: Partial parsing: updated file: hotel_dwh://dbt/hotel_dwh/models\source.yml
+[0m05:55:28.149392 [debug] [MainThread]: Partial parsing: deleted file: hotel_dwh://dbt/hotel_dwh/models\silver\clean_hotel_bookings.sql
+[0m05:55:28.149933 [debug] [MainThread]: Partial parsing: deleted file: hotel_dwh://dbt/hotel_dwh/models\gold\facts\fct_booking.sql
+[0m05:55:28.150523 [debug] [MainThread]: Partial parsing: deleted file: hotel_dwh://dbt/hotel_dwh/models\gold\dimensions\dim_hotel.sql
+[0m05:55:28.150989 [debug] [MainThread]: Partial parsing: updated file: hotel_dwh://dbt/hotel_dwh/models\staging\stg_raw_hotel_bookings.sql
+[0m05:55:28.153742 [info ] [MainThread]: Unable to do partial parsing because change detected to override macro. Starting full parse.
+[0m05:55:29.745124 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6ea97b6f-3ec6-41a9-8eb2-c7bf163a50f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40CCF7750>]}
+[0m05:55:29.839684 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m05:55:29.842844 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m05:55:29.860633 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6ea97b6f-3ec6-41a9-8eb2-c7bf163a50f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40C3B3F20>]}
+[0m05:55:29.861377 [info ] [MainThread]: Found 8 models, 1 source, 564 macros
+[0m05:55:29.862026 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ea97b6f-3ec6-41a9-8eb2-c7bf163a50f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40D222A50>]}
+[0m05:55:29.865018 [info ] [MainThread]: 
+[0m05:55:29.865843 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m05:55:29.866587 [info ] [MainThread]: 
+[0m05:55:29.867723 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m05:55:29.874746 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HOTEL_DWH_SILVER'
+[0m05:55:29.908481 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m05:55:29.909230 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show objects in HOTEL_DWH.SILVER
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */;
+[0m05:55:29.909794 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m05:55:31.045181 [debug] [ThreadPool]: SQL status: SUCCESS 1 in 1.135 seconds
+[0m05:55:31.056811 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m05:55:31.057296 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show user functions in HOTEL_DWH.SILVER
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */
+[0m05:55:31.245311 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.187 seconds
+[0m05:55:31.250093 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6ea97b6f-3ec6-41a9-8eb2-c7bf163a50f5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40CE86B60>]}
+[0m05:55:31.258308 [debug] [Thread-1 (]: Began running node model.hotel_dwh.stg_raw_hotel_bookings
+[0m05:55:31.259009 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.hotel_dwh.stg_raw_hotel_bookings'
+[0m05:55:31.259438 [debug] [Thread-1 (]: Began compiling node model.hotel_dwh.stg_raw_hotel_bookings
+[0m05:55:31.271113 [debug] [Thread-1 (]: Writing injected SQL for node "model.hotel_dwh.stg_raw_hotel_bookings"
+[0m05:55:31.272720 [debug] [Thread-1 (]: Finished running node model.hotel_dwh.stg_raw_hotel_bookings
+[0m05:55:31.274062 [debug] [Thread-1 (]: Began running node model.hotel_dwh.stg_customers
+[0m05:55:31.274629 [debug] [Thread-3 (]: Began running node model.hotel_dwh.stg_agents_companies
+[0m05:55:31.275095 [debug] [Thread-4 (]: Began running node model.hotel_dwh.stg_bookings
+[0m05:55:31.275589 [debug] [Thread-2 (]: Began running node model.hotel_dwh.rejected_rows
+[0m05:55:31.276131 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.hotel_dwh.stg_raw_hotel_bookings, now model.hotel_dwh.stg_customers)
+[0m05:55:31.276850 [debug] [Thread-3 (]: Acquiring new snowflake connection 'model.hotel_dwh.stg_agents_companies'
+[0m05:55:31.277450 [debug] [Thread-4 (]: Acquiring new snowflake connection 'model.hotel_dwh.stg_bookings'
+[0m05:55:31.278041 [debug] [Thread-2 (]: Acquiring new snowflake connection 'model.hotel_dwh.rejected_rows'
+[0m05:55:31.278475 [debug] [Thread-1 (]: Began compiling node model.hotel_dwh.stg_customers
+[0m05:55:31.278854 [debug] [Thread-3 (]: Began compiling node model.hotel_dwh.stg_agents_companies
+[0m05:55:31.279486 [debug] [Thread-4 (]: Began compiling node model.hotel_dwh.stg_bookings
+[0m05:55:31.279884 [debug] [Thread-2 (]: Began compiling node model.hotel_dwh.rejected_rows
+[0m05:55:31.287427 [debug] [Thread-1 (]: Writing injected SQL for node "model.hotel_dwh.stg_customers"
+[0m05:55:31.296115 [debug] [Thread-3 (]: Writing injected SQL for node "model.hotel_dwh.stg_agents_companies"
+[0m05:55:31.362739 [debug] [Thread-2 (]: Writing injected SQL for node "model.hotel_dwh.rejected_rows"
+[0m05:55:31.381621 [debug] [Thread-4 (]: Writing injected SQL for node "model.hotel_dwh.stg_bookings"
+[0m05:55:31.384146 [debug] [Thread-4 (]: Began executing node model.hotel_dwh.stg_bookings
+[0m05:55:31.385421 [debug] [Thread-4 (]: Finished running node model.hotel_dwh.stg_bookings
+[0m05:55:31.386067 [debug] [Thread-4 (]: Began running node model.hotel_dwh.stg_hotels
+[0m05:55:31.386661 [debug] [Thread-4 (]: Re-using an available connection from the pool (formerly model.hotel_dwh.stg_bookings, now model.hotel_dwh.stg_hotels)
+[0m05:55:31.387249 [debug] [Thread-3 (]: Began executing node model.hotel_dwh.stg_agents_companies
+[0m05:55:31.387908 [debug] [Thread-2 (]: Began executing node model.hotel_dwh.rejected_rows
+[0m05:55:31.388733 [debug] [Thread-4 (]: Began compiling node model.hotel_dwh.stg_hotels
+[0m05:55:31.389786 [debug] [Thread-3 (]: Finished running node model.hotel_dwh.stg_agents_companies
+[0m05:55:31.391361 [debug] [Thread-2 (]: Finished running node model.hotel_dwh.rejected_rows
+[0m05:55:31.396896 [debug] [Thread-4 (]: Writing injected SQL for node "model.hotel_dwh.stg_hotels"
+[0m05:55:31.397369 [debug] [Thread-1 (]: Began executing node model.hotel_dwh.stg_customers
+[0m05:55:31.397866 [debug] [Thread-3 (]: Began running node model.hotel_dwh.stg_segments
+[0m05:55:31.399677 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.hotel_dwh.stg_agents_companies, now model.hotel_dwh.stg_segments)
+[0m05:55:31.400467 [debug] [Thread-3 (]: Began compiling node model.hotel_dwh.stg_segments
+[0m05:55:31.398898 [debug] [Thread-1 (]: Finished running node model.hotel_dwh.stg_customers
+[0m05:55:31.410897 [debug] [Thread-3 (]: Writing injected SQL for node "model.hotel_dwh.stg_segments"
+[0m05:55:31.446627 [debug] [Thread-4 (]: Began executing node model.hotel_dwh.stg_hotels
+[0m05:55:31.447871 [debug] [Thread-4 (]: Finished running node model.hotel_dwh.stg_hotels
+[0m05:55:31.448672 [debug] [Thread-3 (]: Began executing node model.hotel_dwh.stg_segments
+[0m05:55:31.449721 [debug] [Thread-3 (]: Finished running node model.hotel_dwh.stg_segments
+[0m05:55:31.450609 [debug] [Thread-2 (]: Began running node model.hotel_dwh.int_booking_risk
+[0m05:55:31.451143 [debug] [Thread-2 (]: Re-using an available connection from the pool (formerly model.hotel_dwh.rejected_rows, now model.hotel_dwh.int_booking_risk)
+[0m05:55:31.451571 [debug] [Thread-2 (]: Began compiling node model.hotel_dwh.int_booking_risk
+[0m05:55:31.458675 [debug] [Thread-2 (]: Writing injected SQL for node "model.hotel_dwh.int_booking_risk"
+[0m05:55:31.460017 [debug] [Thread-2 (]: Began executing node model.hotel_dwh.int_booking_risk
+[0m05:55:31.461037 [debug] [Thread-2 (]: Finished running node model.hotel_dwh.int_booking_risk
+[0m05:55:31.462585 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m05:55:31.462970 [debug] [MainThread]: Connection 'list_HOTEL_DWH_SILVER' was left open.
+[0m05:55:31.463314 [debug] [MainThread]: On list_HOTEL_DWH_SILVER: Close
+[0m05:55:31.654846 [debug] [MainThread]: Connection 'model.hotel_dwh.stg_customers' was properly closed.
+[0m05:55:31.655718 [debug] [MainThread]: Connection 'model.hotel_dwh.stg_segments' was properly closed.
+[0m05:55:31.656029 [debug] [MainThread]: Connection 'model.hotel_dwh.stg_hotels' was properly closed.
+[0m05:55:31.656287 [debug] [MainThread]: Connection 'model.hotel_dwh.int_booking_risk' was properly closed.
+[0m05:55:31.658148 [debug] [MainThread]: Command end result
+[0m05:55:31.698221 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m05:55:31.701168 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m05:55:31.710028 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Workspace\BI\dss_hotel_analytics\target\run_results.json
+[0m05:55:31.711334 [debug] [MainThread]: Command `dbt compile` succeeded at 05:55:31.711176 after 6.49 seconds
+[0m05:55:31.711807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D469C52D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40CC19650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001D40CC19A70>]}
+[0m05:55:31.712255 [debug] [MainThread]: Flushing usage events
+[0m05:55:33.300550 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m07:46:35.281133 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C653481A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C663FFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C663FF9D0>]}
+
+
+============================== 07:46:35.288224 | 851e3743-0612-4cb3-af5f-ff80ca059a0f ==============================
+[0m07:46:35.288224 [info ] [MainThread]: Running with dbt=1.11.11
+[0m07:46:35.289226 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt debug', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m07:46:35.331199 [info ] [MainThread]: dbt version: 1.11.11
+[0m07:46:35.332011 [info ] [MainThread]: python version: 3.13.9
+[0m07:46:35.332605 [info ] [MainThread]: python path: C:\Users\Le Nguyen My Duyen\AppData\Local\Programs\Python\Python313\python.exe
+[0m07:46:35.333091 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m07:46:36.981050 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m07:46:36.981758 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m07:46:36.982124 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m07:46:37.203573 [info ] [MainThread]: Using profiles dir at C:\Users\Le Nguyen My Duyen\.dbt
+[0m07:46:37.204680 [info ] [MainThread]: Using profiles.yml file at C:\Users\Le Nguyen My Duyen\.dbt\profiles.yml
+[0m07:46:37.205941 [info ] [MainThread]: Using dbt_project.yml file at D:\Workspace\BI\dss_hotel_analytics\dbt_project.yml
+[0m07:46:37.208530 [info ] [MainThread]: adapter type: snowflake
+[0m07:46:37.209176 [info ] [MainThread]: adapter version: 1.12.5
+[0m07:46:37.418245 [info ] [MainThread]: Configuration:
+[0m07:46:37.419091 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m07:46:37.419802 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m07:46:37.420577 [info ] [MainThread]: Required dependencies:
+[0m07:46:37.421155 [debug] [MainThread]: Executing "git --help"
+[0m07:46:37.477180 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone      Clone a repository into a new directory\n   init       Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add        Add file contents to the index\n   mv         Move or rename a file, a directory, or a symlink\n   restore    Restore working tree files\n   rm         Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect     Use binary search to find the commit that introduced a bug\n   diff       Show changes between commits, commit and working tree, etc\n   grep       Print lines matching a pattern\n   log        Show commit logs\n   show       Show various types of objects\n   status     Show the working tree status\n\ngrow, mark and tweak your common history\n   backfill   Download missing objects in a partial clone\n   branch     List, create, or delete branches\n   commit     Record changes to the repository\n   merge      Join two or more development histories together\n   rebase     Reapply commits on top of another base tip\n   reset      Reset current HEAD to the specified state\n   switch     Switch branches\n   tag        Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch      Download objects and refs from another repository\n   pull       Fetch from and integrate with another repository or a local branch\n   push       Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m07:46:37.477829 [debug] [MainThread]: STDERR: "b''"
+[0m07:46:37.478414 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m07:46:37.479001 [info ] [MainThread]: Connection:
+[0m07:46:37.479566 [info ] [MainThread]:   account: fc74300.ap-southeast-7.aws
+[0m07:46:37.480010 [info ] [MainThread]:   user: DUYENLNM23416@ST.UEL.EDU.VN
+[0m07:46:37.480423 [info ] [MainThread]:   database: HOTEL_DWH
+[0m07:46:37.480811 [info ] [MainThread]:   warehouse: HOTEL_ANALYTICS_WH
+[0m07:46:37.481206 [info ] [MainThread]:   role: ACCOUNTADMIN
+[0m07:46:37.481722 [info ] [MainThread]:   schema: SILVER
+[0m07:46:37.482179 [info ] [MainThread]:   authenticator: None
+[0m07:46:37.482596 [info ] [MainThread]:   oauth_client_id: None
+[0m07:46:37.482983 [info ] [MainThread]:   query_tag: None
+[0m07:46:37.483389 [info ] [MainThread]:   client_session_keep_alive: False
+[0m07:46:37.483897 [info ] [MainThread]:   host: None
+[0m07:46:37.484346 [info ] [MainThread]:   port: None
+[0m07:46:37.484720 [info ] [MainThread]:   proxy_host: None
+[0m07:46:37.485233 [info ] [MainThread]:   proxy_port: None
+[0m07:46:37.485856 [info ] [MainThread]:   protocol: None
+[0m07:46:37.486440 [info ] [MainThread]:   connect_retries: 1
+[0m07:46:37.486980 [info ] [MainThread]:   connect_timeout: None
+[0m07:46:37.487474 [info ] [MainThread]:   retry_on_database_errors: False
+[0m07:46:37.487850 [info ] [MainThread]:   retry_all: False
+[0m07:46:37.488212 [info ] [MainThread]:   insecure_mode: False
+[0m07:46:37.488662 [info ] [MainThread]:   reuse_connections: True
+[0m07:46:37.489197 [info ] [MainThread]:   s3_stage_vpce_dns_name: None
+[0m07:46:37.489675 [info ] [MainThread]:   workload_identity_provider: None
+[0m07:46:37.490060 [info ] [MainThread]:   workload_identity_entra_resource: None
+[0m07:46:37.490534 [info ] [MainThread]:   platform_detection_timeout_seconds: 0.0
+[0m07:46:37.491231 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m07:46:37.994934 [debug] [MainThread]: Acquiring new snowflake connection 'debug'
+[0m07:46:37.999933 [debug] [MainThread]: Using snowflake connection "debug"
+[0m07:46:38.000487 [debug] [MainThread]: On debug: select 1 as id
+[0m07:46:38.000805 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m07:46:39.151833 [debug] [MainThread]: SQL status: SUCCESS 1 in 1.151 seconds
+[0m07:46:39.154732 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m07:46:39.155507 [info ] [MainThread]: [32mAll checks passed![0m
+[0m07:46:39.157141 [debug] [MainThread]: Command `dbt debug` succeeded at 07:46:39.156980 after 4.14 seconds
+[0m07:46:39.157556 [debug] [MainThread]: Connection 'debug' was left open.
+[0m07:46:39.157919 [debug] [MainThread]: On debug: Close
+[0m07:46:39.346323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C09215220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C0904BD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C7FF69BF0>]}
+[0m07:46:39.347093 [debug] [MainThread]: Flushing usage events
+[0m07:46:41.857414 [debug] [MainThread]: An error was encountered while trying to flush usage events

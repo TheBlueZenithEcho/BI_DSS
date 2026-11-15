@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: "Bronze data ingested into Snowflake."
+    database: HOTEL_DWH
+    schema: BRONZE
+    tables:
+      - name: raw_hotel_bookings
+        description: |
+          Bronze table containing the 32 original source columns plus
+          raw_booking_id and source_file. raw_booking_id is generated once
+          during ingestion and must never be regenerated downstream.

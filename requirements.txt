@@ -1,0 +1,8 @@
+prefect>=3.0
+prefect-shell>=0.5
+python-dotenv>=1.0
+pandas>=2.2
+snowflake-connector-python[pandas]>=3.9
+dbt-snowflake>=1.11.11
+# dbt-utils is a dbt package managed via `dbt deps`; not required in pip, but listed for reference
+

@@ -1,0 +1,71 @@
+version: 2
+
+models:
+  - name: dim_date
+    columns:
+      - name: date_key
+        data_tests: [not_null, unique]
+      - name: full_date
+        data_tests: [not_null, unique]
+
+  - name: dim_hotel
+    columns:
+      - name: hotel_key
+        data_tests: [not_null, unique]
+      - name: hotel_name
+        data_tests: [not_null, unique]
+
+  - name: dim_segment
+    columns:
+      - name: segment_key
+        data_tests: [not_null, unique]
+
+  - name: dim_lead_bucket
+    columns:
+      - name: lead_bucket_key
+        data_tests: [not_null, unique]
+      - name: bucket_label
+        data_tests: [not_null, unique]
+
+  - name: dim_policy
+    columns:
+      - name: policy_key
+        data_tests: [not_null, unique]
+
+  - name: fct_booking
+    columns:
+      - name: booking_id
+        data_tests: [not_null, unique]
+      - name: hotel_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_hotel')
+              field: hotel_key
+      - name: segment_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_segment')
+              field: segment_key
+      - name: lead_bucket_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_lead_bucket')
+              field: lead_bucket_key
+
+  - name: fct_daily_occupancy
+    columns:
+      - name: hotel_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_hotel')
+              field: hotel_key
+      - name: date_key
+        data_tests:
+          - not_null
+          - relationships:
+              to: ref('dim_date')
+              field: date_key

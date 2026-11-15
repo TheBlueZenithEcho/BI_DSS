@@ -1,0 +1,13 @@
+name: hotel_dwh
+version: "1.0"
+config-version: 2
+profile: hotel_dwh
+model-paths: ["dbt/hotel_dwh/models"]
+analysis-paths: ["dbt/hotel_dwh/analysis"]
+test-paths: ["dbt/hotel_dwh/tests"]
+seed-paths: ["dbt/hotel_dwh/seeds"]
+macro-paths: ["dbt/hotel_dwh/macros"]
+target-path: "target"
+clean-targets:
+  - "target"
+  - "dbt_modules"
