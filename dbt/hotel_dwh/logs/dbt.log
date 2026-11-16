@@ -9941,3 +9941,52 @@ having count(*) > 1
 [0m08:32:56.757996 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018F8DA92D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FB0BF2360>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000018FB0D3F6A0>]}
 [0m08:32:56.758537 [debug] [MainThread]: Flushing usage events
 [0m08:32:58.072683 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:05:49.434697 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000027748ED81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774AFEFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002774AFEF9D0>]}
+
+
+============================== 21:05:49.442688 | 994a1b0b-e62c-4e64-be44-4725470ba5d8 ==============================
+[0m21:05:49.442688 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:05:49.443959 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt run --select stg_bookings', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\dbt\\hotel_dwh\\logs'}
+[0m21:05:50.757146 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:05:50.757686 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:05:50.758040 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:05:51.171676 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The packages.yml file in this project is malformed. Please double check
+  the contents of this file and fix any errors before retrying.
+  
+  You can find more information on the syntax for this file here:
+  https://docs.getdbt.com/docs/package-management
+  
+  Validator Error:
+  dbt_utils was not found in the package index. Packages on the index require a namespace, e.g dbt-labs/dbt_utils
+  
+
+Error encountered in D:\Workspace\BI\dss_hotel_analytics\dbt\hotel_dwh\dbt_project.yml
+[0m21:05:51.173848 [debug] [MainThread]: Command `dbt run` failed at 21:05:51.173603 after 2.00 seconds
+[0m21:05:51.174382 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002776CB723F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002776CB5FBF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002776CB9DBF0>]}
+[0m21:05:51.174807 [debug] [MainThread]: Flushing usage events
+[0m21:05:52.838799 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:07:29.344702 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002069DEE81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002069EF9FC50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002069EF9F890>]}
+
+
+============================== 21:07:29.352422 | a573cc3e-8c76-4b0f-9ef4-51b2f8232032 ==============================
+[0m21:07:29.352422 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:07:29.353662 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt clean', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\dbt\\hotel_dwh\\logs'}
+[0m21:07:29.509717 [error] [MainThread]: Encountered an error:
+Runtime Error
+  The packages.yml file in this project is malformed. Please double check
+  the contents of this file and fix any errors before retrying.
+  
+  You can find more information on the syntax for this file here:
+  https://docs.getdbt.com/docs/package-management
+  
+  Validator Error:
+  dbt_utils was not found in the package index. Packages on the index require a namespace, e.g dbt-labs/dbt_utils
+  
+
+Error encountered in D:\Workspace\BI\dss_hotel_analytics\dbt\hotel_dwh\dbt_project.yml
+[0m21:07:29.511926 [debug] [MainThread]: Command `dbt clean` failed at 21:07:29.511736 after 0.44 seconds
+[0m21:07:29.512489 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206A0096C40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206A0230CB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000206A0238AF0>]}
+[0m21:07:29.513079 [debug] [MainThread]: Flushing usage events
+[0m21:07:31.281724 [debug] [MainThread]: An error was encountered while trying to flush usage events

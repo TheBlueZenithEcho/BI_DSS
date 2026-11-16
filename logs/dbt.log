@@ -769,3 +769,439 @@ invalid identifier 'ARRIVAL_DATE' (request_id=64d9b49e-1b4b-4f31-bf24-395bb6a9c1
 [0m07:46:39.346323 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C09215220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C0904BD10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000023C7FF69BF0>]}
 [0m07:46:39.347093 [debug] [MainThread]: Flushing usage events
 [0m07:46:41.857414 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:07:58.739056 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE203A81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE2145FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE2145F9D0>]}
+
+
+============================== 21:07:58.745210 | 9d96e878-c73d-4f8c-81c1-da6ad2140c7a ==============================
+[0m21:07:58.745210 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:07:58.746383 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m21:07:59.136293 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '9d96e878-c73d-4f8c-81c1-da6ad2140c7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE2072E520>]}
+[0m21:07:59.193058 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:07:59.194904 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:07:59.196818 [debug] [MainThread]: Command `dbt deps` succeeded at 21:07:59.196623 after 0.64 seconds
+[0m21:07:59.197378 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE226285A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE2262ACF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001CE21310A50>]}
+[0m21:07:59.197923 [debug] [MainThread]: Flushing usage events
+[0m21:08:00.906232 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:08:13.583137 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAAACC81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAABD6FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAABD6F9D0>]}
+
+
+============================== 21:08:13.589270 | 55bcde65-e92e-4b0a-a919-e393d7d800ab ==============================
+[0m21:08:13.589270 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:08:13.590338 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'use_colors': 'True', 'invocation_command': 'dbt clean', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m21:08:13.819467 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '55bcde65-e92e-4b0a-a919-e393d7d800ab', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAAB052520>]}
+[0m21:08:13.907918 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+        The default package install path has changed from `dbt_modules` to
+`dbt_packages`.         Please update `clean-targets` in `dbt_project.yml` and
+check `.gitignore` as well.         Or, set `packages-install-path: dbt_modules`
+if you'd like to keep the current value.
+[0m21:08:13.909031 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '55bcde65-e92e-4b0a-a919-e393d7d800ab', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAACFB9260>]}
+[0m21:08:13.917260 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- PackageInstallPathDeprecation: 1 occurrence
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m21:08:13.918836 [debug] [MainThread]: Command `dbt clean` succeeded at 21:08:13.918678 after 0.50 seconds
+[0m21:08:13.919336 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAABC23D50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAABC23C50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001FAAB572F30>]}
+[0m21:08:13.919969 [debug] [MainThread]: Flushing usage events
+[0m21:08:15.548255 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:08:27.261725 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002319EFF81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A00AFD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A00AF9D0>]}
+
+
+============================== 21:08:27.269596 | fadba27d-b168-4839-83bd-1bf6db2ef402 ==============================
+[0m21:08:27.269596 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:08:27.270827 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m21:08:27.538871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fadba27d-b168-4839-83bd-1bf6db2ef402', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002319F382520>]}
+[0m21:08:27.587361 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:08:27.589223 [info ] [MainThread]: Warning: No packages were found in packages.yml
+[0m21:08:27.590704 [debug] [MainThread]: Command `dbt deps` succeeded at 21:08:27.590542 after 0.53 seconds
+[0m21:08:27.591151 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A127C5A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000231A127ECF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002319FF60A50>]}
+[0m21:08:27.591743 [debug] [MainThread]: Flushing usage events
+[0m21:08:29.270566 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:08:34.566681 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E69D81A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E7B1FD90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E7B1F9D0>]}
+
+
+============================== 21:08:34.572849 | 686503fa-aa1b-4b5b-a370-63eb438697a9 ==============================
+[0m21:08:34.572849 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:08:34.573603 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run --select stg_bookings', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m21:08:35.746243 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:08:35.746868 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:08:35.747292 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:08:36.171800 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E6D5E520>]}
+[0m21:08:36.276762 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E783B8A0>]}
+[0m21:08:36.279035 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m21:08:36.778077 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:08:36.779418 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m21:08:36.780024 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38A371F50>]}
+[0m21:08:41.539455 [warn ] [MainThread]: [[33mWARNING[0m][MissingArgumentsPropertyInGenericTestDeprecation]: Deprecated
+functionality
+Found top-level arguments to test `relationships` defined on 'fct_booking' in
+package 'hotel_dwh' (dbt/hotel_dwh/models\gold\schema.yml). Arguments to generic
+tests should be nested under the `arguments` property.
+[0m21:08:41.540286 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38AB62030>]}
+[0m21:08:41.760312 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38C0D27B0>]}
+[0m21:08:41.878257 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m21:08:41.933957 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m21:08:41.962696 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38AC06B60>]}
+[0m21:08:41.963283 [info ] [MainThread]: Found 15 models, 31 data tests, 1 source, 564 macros
+[0m21:08:41.963873 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38C0AF350>]}
+[0m21:08:41.966210 [info ] [MainThread]: 
+[0m21:08:41.966796 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:08:41.967459 [info ] [MainThread]: 
+[0m21:08:41.968184 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:08:41.969353 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HOTEL_DWH'
+[0m21:08:41.991621 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH"
+[0m21:08:41.992084 [debug] [ThreadPool]: On list_HOTEL_DWH: show terse schemas in database HOTEL_DWH
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH"} */
+[0m21:08:41.992405 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:08:43.718343 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.726 seconds
+[0m21:08:43.771869 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HOTEL_DWH_SILVER'
+[0m21:08:43.787636 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m21:08:43.788307 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show objects in HOTEL_DWH.SILVER
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */;
+[0m21:08:43.788661 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:08:45.041799 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.253 seconds
+[0m21:08:45.051417 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m21:08:45.051829 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show user functions in HOTEL_DWH.SILVER
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */
+[0m21:08:45.452735 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.400 seconds
+[0m21:08:45.458466 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38C326AF0>]}
+[0m21:08:45.523671 [debug] [Thread-1 (]: Began running node model.hotel_dwh.stg_bookings
+[0m21:08:45.524836 [info ] [Thread-1 (]: 1 of 1 START sql table model SILVER.stg_bookings ............................... [RUN]
+[0m21:08:45.525939 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.hotel_dwh.stg_bookings'
+[0m21:08:45.526404 [debug] [Thread-1 (]: Began compiling node model.hotel_dwh.stg_bookings
+[0m21:08:45.538731 [debug] [Thread-1 (]: Writing injected SQL for node "model.hotel_dwh.stg_bookings"
+[0m21:08:45.607699 [debug] [Thread-1 (]: Writing injected SQL for node "model.hotel_dwh.stg_bookings"
+[0m21:08:45.609568 [debug] [Thread-1 (]: Began executing node model.hotel_dwh.stg_bookings
+[0m21:08:45.650794 [debug] [Thread-1 (]: Writing runtime sql for node "model.hotel_dwh.stg_bookings"
+[0m21:08:45.653999 [debug] [Thread-1 (]: Using snowflake connection "model.hotel_dwh.stg_bookings"
+[0m21:08:45.654693 [debug] [Thread-1 (]: On model.hotel_dwh.stg_bookings: create or replace transient table HOTEL_DWH.SILVER.stg_bookings
+    
+    
+    
+    
+    
+
+    as (
+
+-- Preserve the legacy rule: duplicate detection uses all 32 source columns,
+-- before quarantine, and the smallest Bronze raw_booking_id is the first row.
+with  __dbt__cte__stg_raw_hotel_bookings as (
+
+
+-- Thin source wrapper. All Silver models read the same Bronze relation.
+-- Do not generate or reorder raw_booking_id here.
+select *
+from HOTEL_DWH.BRONZE.raw_hotel_bookings
+), source as (
+    select *
+    from __dbt__cte__stg_raw_hotel_bookings
+),
+marked as (
+    select
+        source.*,
+        iff(
+            row_number() over (
+                partition by
+                    "hotel",
+                    "is_canceled",
+                    "lead_time",
+                    "arrival_date_year",
+                    "arrival_date_month",
+                    "arrival_date_week_number",
+                    "arrival_date_day_of_month",
+                    "stays_in_weekend_nights",
+                    "stays_in_week_nights",
+                    "adults",
+                    "children",
+                    "babies",
+                    "meal",
+                    "country",
+                    "market_segment",
+                    "distribution_channel",
+                    "is_repeated_guest",
+                    "previous_cancellations",
+                    "previous_bookings_not_canceled",
+                    "reserved_room_type",
+                    "assigned_room_type",
+                    "booking_changes",
+                    "deposit_type",
+                    "agent",
+                    "company",
+                    "days_in_waiting_list",
+                    "customer_type",
+                    "adr",
+                    "required_car_parking_spaces",
+                    "total_of_special_requests",
+                    "reservation_status",
+                    "reservation_status_date"
+                order by "raw_booking_id"
+            ) = 1,
+            0, 1
+        )::integer as is_duplicate,
+        (
+            coalesce(try_to_number(to_varchar("adults")), 0)
+            + coalesce(try_to_number(to_varchar("children")), 0)
+            + coalesce(try_to_number(to_varchar("babies")), 0)
+        ) as guest_count,
+        try_to_double(to_varchar("adr")) as raw_adr
+    from source
+),
+cleaned as (
+    select
+        "raw_booking_id"::number(38,0) as raw_booking_id,
+        trim("hotel") as hotel_name,
+        try_to_number(to_varchar("is_canceled"))::integer as is_canceled,
+        try_to_number(to_varchar("lead_time"))::integer as lead_time,
+
+        to_date(
+            to_varchar("arrival_date_year") || '-' ||
+            lpad(
+                case upper(trim("arrival_date_month"))
+                    when 'JANUARY' then '1'
+                    when 'FEBRUARY' then '2'
+                    when 'MARCH' then '3'
+                    when 'APRIL' then '4'
+                    when 'MAY' then '5'
+                    when 'JUNE' then '6'
+                    when 'JULY' then '7'
+                    when 'AUGUST' then '8'
+                    when 'SEPTEMBER' then '9'
+                    when 'OCTOBER' then '10'
+                    when 'NOVEMBER' then '11'
+                    when 'DECEMBER' then '12'
+                end,
+                2, '0'
+            ) || '-' ||
+            lpad(to_varchar("arrival_date_day_of_month"), 2, '0'),
+            'YYYY-MM-DD'
+        ) as arrival_date,
+
+        try_to_number(to_varchar("arrival_date_week_number"))::integer as arrival_date_week_number,
+        try_to_number(to_varchar("stays_in_weekend_nights"))::integer as stays_in_weekend_nights,
+        try_to_number(to_varchar("stays_in_week_nights"))::integer as stays_in_week_nights,
+        try_to_number(to_varchar("adults"))::integer as adults,
+        coalesce(try_to_number(to_varchar("children")), 0)::integer as children,
+        try_to_number(to_varchar("babies"))::integer as babies,
+
+        trim("meal") as meal,
+        trim("reserved_room_type") as reserved_room_type,
+        trim("assigned_room_type") as assigned_room_type,
+        trim("reservation_status") as reservation_status,
+
+        try_to_number(to_varchar("booking_changes"))::integer as booking_changes,
+        try_to_number(to_varchar("days_in_waiting_list"))::integer as days_in_waiting_list,
+        try_to_number(to_varchar("required_car_parking_spaces"))::integer as required_car_parking_spaces,
+        try_to_number(to_varchar("total_of_special_requests"))::integer as total_of_special_requests,
+
+        round(raw_adr, 2) as _rounded_adr,
+        iff(raw_adr < 0, 1, 0)::integer as adr_was_negative,
+        greatest(round(raw_adr, 2), 0) as adr,
+        to_date("reservation_status_date") as reservation_status_date,
+        is_duplicate
+    from marked
+    where guest_count > 0
+      and (raw_adr is null or (raw_adr >= 0 and raw_adr <= 1000))
+)
+select
+    raw_booking_id,
+    hotel_name,
+    is_canceled,
+    lead_time,
+    arrival_date,
+    arrival_date_week_number,
+    stays_in_weekend_nights,
+    stays_in_week_nights,
+    adults,
+    children,
+    babies,
+    meal,
+    reserved_room_type,
+    assigned_room_type,
+    booking_changes,
+    days_in_waiting_list,
+    adr,
+    adr_was_negative,
+    reservation_status,
+    reservation_status_date,
+    required_car_parking_spaces,
+    total_of_special_requests,
+    is_duplicate
+from cleaned
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "node_id": "model.hotel_dwh.stg_bookings"} */;
+[0m21:08:45.655317 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:08:48.830237 [debug] [Thread-1 (]: SQL status: SUCCESS 119208 in 3.175 seconds
+[0m21:08:48.863276 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '686503fa-aa1b-4b5b-a370-63eb438697a9', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E6D12D50>]}
+[0m21:08:48.864410 [info ] [Thread-1 (]: 1 of 1 OK created sql table model SILVER.stg_bookings .......................... [[32mSUCCESS 119208[0m in 3.33s]
+[0m21:08:48.865413 [debug] [Thread-1 (]: Finished running node model.hotel_dwh.stg_bookings
+[0m21:08:48.867420 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:08:48.867810 [debug] [MainThread]: Connection 'list_HOTEL_DWH' was left open.
+[0m21:08:48.868140 [debug] [MainThread]: On list_HOTEL_DWH: Close
+[0m21:08:49.033467 [debug] [MainThread]: Connection 'list_HOTEL_DWH_SILVER' was left open.
+[0m21:08:49.034229 [debug] [MainThread]: On list_HOTEL_DWH_SILVER: Close
+[0m21:08:49.240022 [debug] [MainThread]: Connection 'model.hotel_dwh.stg_bookings' was left open.
+[0m21:08:49.240986 [debug] [MainThread]: On model.hotel_dwh.stg_bookings: Close
+[0m21:08:49.443429 [info ] [MainThread]: 
+[0m21:08:49.444400 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 7.48 seconds (7.48s).
+[0m21:08:49.445537 [debug] [MainThread]: Command end result
+[0m21:08:49.710597 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m21:08:49.714360 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m21:08:49.721935 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Workspace\BI\dss_hotel_analytics\target\run_results.json
+[0m21:08:49.722451 [info ] [MainThread]: 
+[0m21:08:49.723130 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:08:49.723754 [info ] [MainThread]: 
+[0m21:08:49.724383 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:08:49.725245 [warn ] [MainThread]: [[33mWARNING[0m][DeprecationsSummary]: Deprecated functionality
+Summary of encountered deprecations:
+- MissingArgumentsPropertyInGenericTestDeprecation: 8 occurrences
+To see all deprecation instances instead of just the first occurrence of each,
+run command again with the `--show-all-deprecations` flag. You may also need to
+run with `--no-partial-parse` as some deprecations are only encountered during
+parsing.
+[0m21:08:49.726759 [debug] [MainThread]: Command `dbt run` succeeded at 21:08:49.726605 after 15.33 seconds
+[0m21:08:49.727203 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E6D15FD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B38C18CAD0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001B3E11175B0>]}
+[0m21:08:49.727727 [debug] [MainThread]: Flushing usage events
+[0m21:08:51.493258 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m21:18:55.387122 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3BF581A0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3E067D90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3E0679D0>]}
+
+
+============================== 21:18:55.394651 | 400ef700-432f-49a2-bebd-5dfb1ce99f81 ==============================
+[0m21:18:55.394651 [info ] [MainThread]: Running with dbt=1.11.11
+[0m21:18:55.395661 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'False', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\Le Nguyen My Duyen\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'indirect_selection': 'eager', 'use_colors': 'True', 'invocation_command': 'dbt run --select dim_policy', 'use_experimental_parser': 'False', 'log_path': 'D:\\Workspace\\BI\\dss_hotel_analytics\\logs'}
+[0m21:18:56.811732 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m21:18:56.812432 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m21:18:56.812797 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m21:18:57.263546 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '400ef700-432f-49a2-bebd-5dfb1ce99f81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3C2DA650>]}
+[0m21:18:57.404829 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '400ef700-432f-49a2-bebd-5dfb1ce99f81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B3CDB78A0>]}
+[0m21:18:57.409500 [info ] [MainThread]: Registered adapter: snowflake=1.12.5
+[0m21:18:57.952767 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m21:18:58.180852 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m21:18:58.181934 [debug] [MainThread]: Partial parsing: updated file: hotel_dwh://dbt/hotel_dwh/models\silver\1_staging\stg_bookings.sql
+[0m21:18:58.182661 [debug] [MainThread]: Partial parsing: updated file: hotel_dwh://dbt/hotel_dwh/models\gold\dimensions\dim_policy.sql
+[0m21:18:58.958807 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '400ef700-432f-49a2-bebd-5dfb1ce99f81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B60008F50>]}
+[0m21:18:59.161450 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m21:18:59.167139 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m21:18:59.198237 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '400ef700-432f-49a2-bebd-5dfb1ce99f81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B5ED66030>]}
+[0m21:18:59.199162 [info ] [MainThread]: Found 15 models, 31 data tests, 1 source, 564 macros
+[0m21:18:59.200063 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '400ef700-432f-49a2-bebd-5dfb1ce99f81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B601A0F30>]}
+[0m21:18:59.202821 [info ] [MainThread]: 
+[0m21:18:59.203681 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m21:18:59.204580 [info ] [MainThread]: 
+[0m21:18:59.205415 [debug] [MainThread]: Acquiring new snowflake connection 'master'
+[0m21:18:59.207242 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HOTEL_DWH'
+[0m21:18:59.233826 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH"
+[0m21:18:59.234778 [debug] [ThreadPool]: On list_HOTEL_DWH: show terse schemas in database HOTEL_DWH
+    limit 10000
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH"} */
+[0m21:18:59.235283 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:19:00.779565 [debug] [ThreadPool]: SQL status: SUCCESS 6 in 1.544 seconds
+[0m21:19:00.791657 [debug] [ThreadPool]: Acquiring new snowflake connection 'list_HOTEL_DWH_SILVER'
+[0m21:19:00.809867 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m21:19:00.810451 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show objects in HOTEL_DWH.SILVER
+    limit 10000
+    
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */;
+[0m21:19:00.810932 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m21:19:02.008749 [debug] [ThreadPool]: SQL status: SUCCESS 8 in 1.198 seconds
+[0m21:19:02.019069 [debug] [ThreadPool]: Using snowflake connection "list_HOTEL_DWH_SILVER"
+[0m21:19:02.019617 [debug] [ThreadPool]: On list_HOTEL_DWH_SILVER: show user functions in HOTEL_DWH.SILVER
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "connection_name": "list_HOTEL_DWH_SILVER"} */
+[0m21:19:02.213022 [debug] [ThreadPool]: SQL status: SUCCESS 0 in 0.193 seconds
+[0m21:19:02.218819 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '400ef700-432f-49a2-bebd-5dfb1ce99f81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B604F2DD0>]}
+[0m21:19:02.226857 [debug] [Thread-1 (]: Began running node model.hotel_dwh.dim_policy
+[0m21:19:02.246194 [info ] [Thread-1 (]: 1 of 1 START sql table model SILVER.dim_policy ................................. [RUN]
+[0m21:19:02.247489 [debug] [Thread-1 (]: Acquiring new snowflake connection 'model.hotel_dwh.dim_policy'
+[0m21:19:02.247983 [debug] [Thread-1 (]: Began compiling node model.hotel_dwh.dim_policy
+[0m21:19:02.259556 [debug] [Thread-1 (]: Writing injected SQL for node "model.hotel_dwh.dim_policy"
+[0m21:19:02.261917 [debug] [Thread-1 (]: Began executing node model.hotel_dwh.dim_policy
+[0m21:19:02.312938 [debug] [Thread-1 (]: Writing runtime sql for node "model.hotel_dwh.dim_policy"
+[0m21:19:02.315630 [debug] [Thread-1 (]: Using snowflake connection "model.hotel_dwh.dim_policy"
+[0m21:19:02.316707 [debug] [Thread-1 (]: On model.hotel_dwh.dim_policy: create or replace transient table HOTEL_DWH.SILVER.dim_policy
+    
+    
+    
+    
+    
+
+    as (
+with policies as (
+    select
+        policy_key,
+        policy_code,
+        policy_name,
+        policy_type,
+        hotel_scope,
+        ob_low_risk_pct,
+        ob_medium_risk_pct,
+        ob_high_risk_pct
+    from values
+        (1, 'P0', 'No overbooking',                     'BASELINE',        'ALL',          0.000, 0.000, 0.000),
+        (2, 'P1', 'Uniform 5%',                         'UNIFORM',         'ALL',          0.050, 0.050, 0.050),
+        (3, 'P2', 'Uniform 8%',                         'UNIFORM',         'ALL',          0.080, 0.080, 0.080),
+        (4, 'P3', 'Uniform 15%',                        'UNIFORM',         'ALL',          0.150, 0.150, 0.150),
+        (5, 'P4', 'Task scenario 8% / 11.5% / 15%',     'TASK_SCENARIO',   'ALL',          0.080, 0.115, 0.150),
+        (6, 'P5', 'Optimal uniform 6% (City)',          'OPTIMAL_UNIFORM', 'City Hotel',   0.060, 0.060, 0.060),
+        (7, 'P5', 'Optimal uniform 3% (Resort)',        'OPTIMAL_UNIFORM', 'Resort Hotel', 0.030, 0.030, 0.030),
+        (8, 'P6', 'Optimal risk-based 4/6/13% (City)',  'OPTIMAL_RISK',    'City Hotel',   0.040, 0.060, 0.130),
+        (9, 'P6', 'Optimal risk-based 2/3/9% (Resort)', 'OPTIMAL_RISK',    'Resort Hotel', 0.020, 0.030, 0.090)
+    as v(
+        policy_key,
+        policy_code,
+        policy_name,
+        policy_type,
+        hotel_scope,
+        ob_low_risk_pct,
+        ob_medium_risk_pct,
+        ob_high_risk_pct
+    )
+)
+
+select
+    policy_key::integer as policy_key,
+    policy_code::varchar as policy_code,
+    policy_name::varchar as policy_name,
+    policy_type::varchar as policy_type,
+    hotel_scope::varchar as hotel_scope,
+    ob_low_risk_pct::number(8,3) as ob_low_risk_pct,
+    ob_medium_risk_pct::number(8,3) as ob_medium_risk_pct,
+    ob_high_risk_pct::number(8,3) as ob_high_risk_pct,
+    7::integer as late_cancel_threshold_T,
+    1.5::number(8,3) as compensation_multiplier
+from policies
+    )
+
+/* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "hotel_dwh", "target_name": "dev", "node_id": "model.hotel_dwh.dim_policy"} */;
+[0m21:19:02.317333 [debug] [Thread-1 (]: Opening a new connection, currently in state init
+[0m21:19:03.953554 [debug] [Thread-1 (]: SQL status: SUCCESS 9 in 1.636 seconds
+[0m21:19:03.986495 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '400ef700-432f-49a2-bebd-5dfb1ce99f81', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B6034F950>]}
+[0m21:19:03.987559 [info ] [Thread-1 (]: 1 of 1 OK created sql table model SILVER.dim_policy ............................ [[32mSUCCESS 9[0m in 1.74s]
+[0m21:19:03.991067 [debug] [Thread-1 (]: Finished running node model.hotel_dwh.dim_policy
+[0m21:19:03.993548 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m21:19:03.993973 [debug] [MainThread]: Connection 'list_HOTEL_DWH' was left open.
+[0m21:19:03.994445 [debug] [MainThread]: On list_HOTEL_DWH: Close
+[0m21:19:04.262691 [debug] [MainThread]: Connection 'list_HOTEL_DWH_SILVER' was left open.
+[0m21:19:04.263551 [debug] [MainThread]: On list_HOTEL_DWH_SILVER: Close
+[0m21:19:04.464747 [debug] [MainThread]: Connection 'model.hotel_dwh.dim_policy' was left open.
+[0m21:19:04.465415 [debug] [MainThread]: On model.hotel_dwh.dim_policy: Close
+[0m21:19:04.671368 [info ] [MainThread]: 
+[0m21:19:04.672447 [info ] [MainThread]: Finished running 1 table model in 0 hours 0 minutes and 5.47 seconds (5.47s).
+[0m21:19:04.674187 [debug] [MainThread]: Command end result
+[0m21:19:04.737858 [debug] [MainThread]: Wrote artifact WritableManifest to D:\Workspace\BI\dss_hotel_analytics\target\manifest.json
+[0m21:19:04.741892 [debug] [MainThread]: Wrote artifact SemanticManifest to D:\Workspace\BI\dss_hotel_analytics\target\semantic_manifest.json
+[0m21:19:04.751179 [debug] [MainThread]: Wrote artifact RunExecutionResult to D:\Workspace\BI\dss_hotel_analytics\target\run_results.json
+[0m21:19:04.751683 [info ] [MainThread]: 
+[0m21:19:04.752725 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m21:19:04.753462 [info ] [MainThread]: 
+[0m21:19:04.754065 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=1
+[0m21:19:04.755551 [debug] [MainThread]: Command `dbt run` succeeded at 21:19:04.755402 after 9.64 seconds
+[0m21:19:04.756009 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B615CD2E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B5FB02350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000024B5FB032F0>]}
+[0m21:19:04.756461 [debug] [MainThread]: Flushing usage events
+[0m21:19:06.513170 [debug] [MainThread]: An error was encountered while trying to flush usage events

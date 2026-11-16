@@ -1,7 +1,4 @@
 {{ config(materialized='table') }}
-
--- Preserve the legacy rule: duplicate detection uses all 32 source columns,
--- before quarantine, and the smallest Bronze raw_booking_id is the first row.
 with source as (
     select *
     from {{ ref('stg_raw_hotel_bookings') }}
@@ -110,8 +107,7 @@ cleaned as (
         is_duplicate
     from marked
     where guest_count > 0
-      and raw_adr >= 0
-      and raw_adr <= {{ var('adr_max', 1000) }}
+      and (raw_adr is null or (raw_adr >= 0 and raw_adr <= {{ var('adr_max', 1000) }}))
 )
 select
     raw_booking_id,

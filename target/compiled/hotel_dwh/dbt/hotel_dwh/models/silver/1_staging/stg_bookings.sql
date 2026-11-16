@@ -117,8 +117,7 @@ cleaned as (
         is_duplicate
     from marked
     where guest_count > 0
-      and raw_adr >= 0
-      and raw_adr <= 1000
+      and (raw_adr is null or (raw_adr >= 0 and raw_adr <= 1000))
 )
 select
     raw_booking_id,
